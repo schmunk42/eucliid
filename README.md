@@ -46,6 +46,14 @@ Build image
 
     docker-compose build
 
+## Credits
+
+- `composer.json` taken from cebe/assetfree-yii2
+
+## Resources
+
+tbd
+
 ---
 
 
