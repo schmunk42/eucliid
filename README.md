@@ -1,8 +1,9 @@
 # eucliid
 
-Euphemistic CLI for Yii 2.0 Framework built with Docker
+Euphemistic CLI for Yii 2.0 Framework (optionally built with Docker)
 
 > "Training starts when I say so!" --Zlatan
+
 
 ## What is this?
  
@@ -13,7 +14,6 @@ A 'docker-packaged' eucliid CLI application is about 60 MB in size, it is build 
 This image is intentionally built without composer and 'the-asset-plugin' on the image itself to ensure a minimal amount of PHP-code and dependencies.
 
 You can build a custom CLI application from this image by using `FROM schmunk42/eucliid` or host-mount single commands and custom console configurations.
-
 
 
 ## Requirements
