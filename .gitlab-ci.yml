@@ -1,3 +1,6 @@
+before_script:
+  - export COMPOSE_PROJECT_NAME=buildpipeline_${CI_PIPELINE_ID}
+  
 build:
   script:
     - docker-compose run --rm composer install --prefer-dist -o
