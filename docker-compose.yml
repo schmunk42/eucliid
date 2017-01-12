@@ -1,12 +1,14 @@
 version: '2'
 services:
 
-  eucliid:
-    build: .
-    image: ${PHP_IMAGE}
-
   composer:
     image: composer
     volumes:
+      # Mount application
       - ./app:/app
+      # Mount external build folder, which will be COPYied to the Docker image
       - ./vendor-build:/app/vendor
+
+  eucliid:
+    build: .
+    image: ${PHP_IMAGE}

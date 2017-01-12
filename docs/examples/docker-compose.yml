@@ -1,0 +1,10 @@
+yii:
+  image: dockeryii2cli_cli
+#  entrypoint: yii
+  volumes:
+    # host-mount single controller file
+    - ./commands/InfoController.php:/app/vendor/yiisoft/yii2/console/controllers/InfoController.php
+    # host-mount binary for adding a custom CLI config (TODO: this kind of a hack)
+    - ./yii:/app/vendor/bin/yii
+  environment:
+    - DATABASE_DSN=mysql:host=db;port=3306;dbname=eucliid
