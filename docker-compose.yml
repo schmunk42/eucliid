@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  eucliid:
+    build: .
+    image: ${PHP_IMAGE}
+
+  composer:
+    image: composer
+    volumes:
+      - ./app:/app
+      - ./vendor-build:/app/vendor

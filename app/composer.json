@@ -1,0 +1,15 @@
+{
+    "name": "schmunk42/eucliid",
+    "description": "Euphemistic CLI for Yii 2.0 Framework built with Docker",
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.9"
+    },
+    "provide": {
+        "bower-asset/jquery": "*",
+        "bower-asset/jquery.inputmask": "*",
+        "bower-asset/punycode": "*",
+        "bower-asset/yii2-pjax": "*"
+    }
+}
