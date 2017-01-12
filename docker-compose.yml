@@ -12,3 +12,4 @@ services:
   eucliid:
     build: .
     image: ${PHP_IMAGE}
+    entrypoint: yii

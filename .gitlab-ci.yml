@@ -1,0 +1,13 @@
+build:
+  script:
+    - docker-compose run --rm composer install --prefer-dist -o
+    - docker-compose build eucliid
+
+test:
+  script:
+    - docker-compose run --rm eucliid
+    - docker-compose run --rm eucliid help
+
+deploy:
+  script:
+    - docker-compose push
