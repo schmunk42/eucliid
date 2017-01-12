@@ -1,9 +1,14 @@
+---
+
+> :a: Notice: This project is in **alpha** stage.
+
+---
+
 # eucliid
 
 Euphemistic CLI for Yii 2.0 Framework (optionally built with Docker)
 
 > "Training starts when I say so!" --Zlatan
-
 
 ## What is this?
  
